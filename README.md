@@ -186,10 +186,8 @@ Available: https://ieeexplore.ieee.org/abstract/document/7848162</p>
 Eudoteca. (s.f.). Eudoteca. Obtenido de Tinkercad: https://www.educoteca.com/tinkercad.html</p>
 RoboticaSchool. (2020). RoboticaSchool. Obtenido de Arduino uno: https://www.robotica.school/curso/arduino-00/explicacion-hardware-arduino-uno/</p>
 Hernandez, L. d. (2018). ProgramarFacil. Obtenido de ESP8266 todo lo que necesitas saber del módulo WiFi para Arduino: https://programarfacil.com/podcast/esp8266-wifi-coste-arduino/#Especificaciones_del_chip_ESP8266</p>
-Wikipedia. (18 de Junio de 2020). Wikipedia . Obtenido de ESP8266: https://es.wikipedia.org/wiki/ESP8266</p>
 Microprocesador. (junio de 22 de 2020). Obtenido de Significados : https://www.significados.com/microprocesador/</p>
 Quarea. (s.f.). Obtenido de SBC: https://www.quarea.com/es/sbc-componente-indispensable</p>
-Wikipedia. (2006-2017). Wikipedia. Obtenido de Microcomputadoras: https://es.wikipedia.org/wiki/Microcomputadora#:~:text=Una%20microcomputadora%2C%20un%20microcomputador%20o,circuito%20integrado%20(o%20chip).</p>
 <H3>15. ANEXOS</H3>
 <H3>15.1 MANUAL DE USUARIO</H3>
 <H3>15.2 HOJAS TECNICAS</H3>
