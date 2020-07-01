@@ -108,7 +108,7 @@ Tinkercad es un software gratuito online creado por la empresa Autodesk, una de 
 •	Chip de comunicación</p>
 <p align="center"><img src="img/5.jpg"/></p>
 <H3>7. MAPA DE VARIABLES</H3>
-<p align="center"><img src="img/6.png"/></p>
+<p align="center"><img src="img/6.PNG"/></p>
 <H3>8. EXPLICACION DEL CODIGO FUENTE</H3>
 <b>MELODIAS TACTILES DE UNA GUITARRA</p></b>
 input.onPinPressed(TouchPin.P2, function () {</p>
