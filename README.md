@@ -59,8 +59,8 @@ https://www.tinkercad.com/</p>
 Tinkercad es un software gratuito online creado por la empresa Autodesk, una de las empresas punteras en el software de diseño 3D de la mano de su programa estrella para tal fin, Inventor.El objetivo al usar Tinkercad debe ser una primera inmersión en el mundo del diseño 3D de una manera sencilla y atractiva, ya que la interfaz de trabajo es simple y muy atractiva inicialmente, si bien una vez dominados los conceptos básicos carece de herramientas para llegar a diseños complejos.Sus ventajas son claras: es sencillo de usar, su aspecto es atractivo y con unas pocas horas de entrenamiento podemos adquirir mucha destreza en su uso.Como desventaja podríamos señalar que es necesario tener una cuenta de correo para darse de alta como usuario y que sólo posee una versión online, por lo que hace falta conexión a internet.Vamos a realizar una guía de manejo básico para dominar las herramientas más usuales de trabajo. Tras los videotutoriales tienes un tutorial redactado paso a paso.El aspecto del software al comenzar un nuevo diseño es el que se muestra en la imagen. Sin extendernos en mucha explicación: en la esquina superior izquierda tenemos el botón “Tinkercad” para volver a nuestra pantalla de inicio como usuarios, en la zona inferior de la misma tenemos botones para controlar el punto de vista de nuestro diseño y el zoom sobre el mismo (aunque ambas opciones se pueden realizar con los botones del ratón o trackpad). En la zona derecha tenemos una serie de menús desplegables con opciones de diseño directas (formas geométricas, letras, símbolos...). En la zona superior tenemos los iconos de deshacer y rehacer y una serie de accesos directos a herramientas de trabajo y de diseño que se explicarán más adelante. En el centro nos encontramos el plano de trabajo (“Workplane”)(Eudoteca,https://www.educoteca.com/tinkercad.html).
 <p align="center"><img src="Imagenes/3.jpg"/></p>
 <b>EMP8266</p></b>
-Cuando salió el Arduino MKR1000, afirmé que revolucionaría el mundo de los objetos conectados, sobre todo por la facilidad de uso que caracteriza a estas placas. Acercaba de una manera sencilla el IoT a la población civil. Pero lo que está ocurriendo con el ESP8266, puede reventar las nuevas tendencias de muchos sectores. Se trata de un chip integrado con conexión WiFi y compatible con el protocolo TCP/IP. El objetivo principal es dar acceso a cualquier microcontrolador a una red. En este artículo haré referencia en varias ocasiones a Arduino y es que, sin duda alguna, es la competencia del Shield WiFi para esta placa. Pero no solo eso, Atmel, el fabricante que provee de microcontroladores a Arduino, sacó al mercado el ATSAMW25, competencia directa del ESP8266. Este microcontrolador es el que incorpora el Arduino MKR1000. La gran diferencia entre el ESP8266 y el ATSAMW25 es el precio. Mientras que podemos encontrar módulos con el chip ESP por 3€, el Arduino MKR1000 sale por unos 40€ con gastos de envío.</p>
-<p align="center"><img src="Imagenes/3.jpg"/></p>
+Cuando salió el Arduino MKR1000, afirmé que revolucionaría el mundo de los objetos conectados, sobre todo por la facilidad de uso que caracteriza a estas placas. Acercaba de una manera sencilla el IoT a la población civil. Pero lo que está ocurriendo con el ESP8266, puede reventar las nuevas tendencias de muchos sectores. Se trata de un chip integrado con conexión WiFi y compatible con el protocolo TCP/IP. El objetivo principal es dar acceso a cualquier microcontrolador a una red. En este artículo haré referencia en varias ocasiones a Arduino y es que, sin duda alguna, es la competencia del Shield WiFi para esta placa. Pero no solo eso, Atmel, el fabricante que provee de microcontroladores a Arduino, sacó al mercado el ATSAMW25, competencia directa del ESP8266. Este microcontrolador es el que incorpora el Arduino MKR1000. La gran diferencia entre el ESP8266 y el ATSAMW25 es el precio. Mientras que podemos encontrar módulos con el chip ESP por 3€, el Arduino MKR1000 sale por unos 40€ con gastos de envío(Wikipedia, 2020).</p>
+<p align="center"><img src="Imagenes/7.jpg"/></p>
 <H3>5. DIAGRAMAS</H3>
 <b>Aurduino uno</b></p>
 <p align="center"><img src="Imagenes/4.png"/></p>
@@ -90,6 +90,8 @@ Cuando salió el Arduino MKR1000, afirmé que revolucionaría el mundo de los ob
 •	RESET-EN: Significa Reset enabled o reset habilitado. Está habilitado el auto-reset, para deshabilitar por cualquier tipo de seguridad (por ejemplo un proyecto que tenemos funcionando y no queremos que nadie lo reinicie al conectar un USB y detecte un stream de datos) debemos desoldar los pads RESET-EN y limpiarlos de forma que estén aislados el uno del otro.
 •	Cristal oscilador de 16MHz necesario para el funcionamiento del reloj del microcontrolador ATMEGA16U2.
 •	Resonador cerámico de 16 Mhz para el microcontrolador ATMEGA328P-PU. Los resonadores cerámicos son menos precisos que los cristales osciladores, pero para el caso hace perfectamente la función y ahorramos bastante espacio en la placa. Se trata del pequeño, porque el cristal grande es para el 16U2 (Code, 28).</p>
+<b>ESP8266</b></p>
+<p align="center"><img src="Imagenes/9.png"/></p>
 <H3>6. LISTA DE COMPONENTES</H3>
 <b>Aurduino uno</b></p>
 •	Conector USB</p>
@@ -110,6 +112,19 @@ Cuando salió el Arduino MKR1000, afirmé que revolucionaría el mundo de los ob
 •	Pines de programación ISCP</p>
 •	Chip de comunicación</p>
 <p align="center"><img src="Imagenes/5.jpg"/></p>
+<b>ESP8266</b></p>
+CPU RISC de 32-bit: Tensilica Xtensa LX106 a un reloj de 80 MHz</p>
+•	RAM de instrucción de 64 KB, RAM de datos de 96 KB</p>
+•	Capacidad de memoria externa flash QSPI - 512 KB a 4 MB* (puede soportar hasta 16 MB)</p>
+•	IEEE 802.11 b/g/n Wi-Fi</p>
+o	Tiene integrados: TR switch, balun, LNA, amplificador de potencia de RF y una red de adaptación de impedancias</p>
+o	Soporte de autenticación WEP y WPA/WPA2</p>
+•	16 pines GPIO (Entradas/Salidas de propósito general)</p>
+•	SPI, IC,</p>
+•	Interfaz IS con DMA (comparte pines con GPIO)</p>
+•	Pines dedicados a UART, más una UART únicamente para transmisión que puede habilitarse a través del pin GPIO2</p>
+•	1 conversor ADC de 10-bit</p>
+<p align="center"><img src="Imagenes/8.png"/></p>
 <H3>7. MAPA DE VARIABLES</H3>
 <p align="center"><img src="Imagenes/6.PNG"/></p>
 <H3>8. EXPLICACION DEL CODIGO FUENTE</H3>
