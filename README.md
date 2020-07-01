@@ -2,7 +2,7 @@
 <p align="center"><img src="Imagenes/e.png"/></p>
 <H3>1. PLANTEAMIENTO DEL PROBLEMA</H3>
 <p align="justify">El hardware de Arduino Uno es un circuito impreso o placa que contiene una MCU o microcontrolador y muchos otros componentes electrónicos que nos permite usar de forma fácil esta MCU en la vida real.También cómo ya hemos comentado las placas de Arduino al ser un hardware de diseño libre sus esquemas están disponibles en internet, para que cualquiera puede hacer su propia placa a su manera.Usar circuitos impresos de Arduino Uno para construir prototipos o proyectos finales como plataforma, es la mejor forma de garantizar la longevidad y continuidad del mismo(Iescamp 2016).</p>
-<p>El ESP8266 es un chip de bajo costo Wi-Fi con un stack TCP/IP completo y un microcontrolador, fabricado por Espressif, una empresa afincada en Shanghái, China.El primer chip se hace conocido en los mercados alrededor de agosto de 2014 con el módulo ESP-01, desarrollado por la empresa AI-Thinker. Este pequeño módulo permite a otros microcontroladores conectarse a un red inalámbrica Wi-Fi y realizar conexiones simples con TCP/IP usando comandos al estilo Hayes.El ESP8285 es como un ESP8266 pero con 1 MB de memoria flash interna, para permitir a dispositivos de un chip conexiones de Wi-Fi.3.El sucesor de estos módulos es el ESP32.</p>
+<p>El ESP8266 es un chip de bajo costo Wi-Fi con un stack TCP/IP completo y un microcontrolador, fabricado por Espressif, una empresa afincada en Shanghái, China.El primer chip se hace conocido en los mercados alrededor de agosto de 2014 con el módulo ESP-01, desarrollado por la empresa AI-Thinker. Este pequeño módulo permite a otros microcontroladores conectarse a un red inalámbrica Wi-Fi y realizar conexiones simples con TCP/IP usando comandos al estilo Hayes.El ESP8285 es como un ESP8266 pero con 1 MB de memoria flash interna, para permitir a dispositivos de un chip conexiones de Wi-Fi.3.El sucesor de estos módulos es el ESP32(Wikipedia, 2020).</p>
 <H3>2. OBJETIVOS</H3>
 <b>Objetivos Generales</b>
 <p align="justify">- Desarrollar correctamente y bien explicado el tutorial de simulador de Arduino en Tinkercad.</p>
@@ -92,6 +92,21 @@ Cuando salió el Arduino MKR1000, afirmé que revolucionaría el mundo de los ob
 •	Resonador cerámico de 16 Mhz para el microcontrolador ATMEGA328P-PU. Los resonadores cerámicos son menos precisos que los cristales osciladores, pero para el caso hace perfectamente la función y ahorramos bastante espacio en la placa. Se trata del pequeño, porque el cristal grande es para el 16U2 (Code, 28).</p>
 <b>ESP8266</b></p>
 <p align="center"><img src="Imagenes/9.png"/></p>
+Hardware</p>
+Utiliza una CPU Tensilica L106 32-bit</p>
+Voltaje de operación entre 3V y 3,6V</p>
+Corriente de operación 80 mA</p>
+Temperatura de operación -40ºC y 125ºC</p>
+Conectividad</p>
+Soporta IPv4 y los protocolos TCP/UDP/HTTP/FTP</p>
+No soporta HTTPS en un principio. Si que lo hace mediante software tanto en cliente como servidor TLS1.2. La primera implementación está todavía en desarrollo.</p>
+Puertos GPIO (de propósito general)</p>
+Tiene 17 puertos GPIO pero solo se pueden usar 9 o 10. El GPIO16 es especial ya que está conectado al RTC (Real Time Clock).</p>
+Pueden ser configurados con resistencia Pull-up o Pull-down.</p>
+Soporta los principales buses de comunicación (SPI, I2C, UART).</p>
+Características eléctricas</p>
+Voltaje de trabajo entre 3V y 3,6V.</p>
+Según noticias del propio CEO de Espressif, admite tensiones de entrada de 5V e los puertos GPIO.</p>
 <H3>6. LISTA DE COMPONENTES</H3>
 <b>Aurduino uno</b></p>
 •	Conector USB</p>
@@ -128,116 +143,9 @@ o	Soporte de autenticación WEP y WPA/WPA2</p>
 <H3>7. MAPA DE VARIABLES</H3>
 <p align="center"><img src="Imagenes/6.PNG"/></p>
 <H3>8. EXPLICACION DEL CODIGO FUENTE</H3>
-<b>MELODIAS TACTILES DE UNA GUITARRA</p></b>
-input.onPinPressed(TouchPin.P2, function () {</p>
-    music.startMelody(music.builtInMelody(Melodies.Blues), MelodyOptions.Once)</p>
-})</p>
-input.onPinPressed(TouchPin.P1, function () {</p>
-    music.startMelody(music.builtInMelody(Melodies.Ode), MelodyOptions.Once)</p>
-})</p>
-Se usa lenguaje de programación en bloques y JavaScript, en bloques se realiza que cuando toque el Pin 1 se reproduzca una melodía llamada ODA y cuando se toque el pin 2 reproduzca una melodía llamada BLUES, dentro de javascript se realiza prácticamente lo mismo, únicamente mediante código. Se crea las funciones para PIN1 Y PIN2 y se da la acciona TOUCHPIN y la música que comenzara cuando se presione dicho PIN, por solo una vez.Para emplear de manera física se necesitara microbit y una batería de manera opcional, el editor makecode o Python, auriculares, 5 cables de clip de cocodrilo y opcional un cartón, papel de estano.</p>
-<b>ALARMA DE INCLINACION</p></b>
-function alarm () {</p>
-    basic.showIcon(IconNames.Angry)</p>
-    music.startMelody(music.builtInMelody(Melodies.Baddy), MelodyOptions.Once)</p>
-}</p>
-input.onGesture(Gesture.Shake, function () {</p>
-    radio.sendString("thief!")</p>
-    alarm()</p>
-})</p>
-radio.onReceivedString(function (receivedString) {</p>
-    alarm()</p>
-})</p>
-radio.setGroup(1)</p>
-Este microbit esta orientado a un tipo de alarma antirrobo de nuestras pertenencias.Se realizo mediante lenguaje de programacion de bloques y javascript, esto se ejecuta cuando el microbit sea agitado, un ejemplo ya sea dentro de un maletin alguien te lo roba y lo agita al maletin por ende el microbit sentira ese gesto y procedera a enviar una senal a otro microbit el cual puedes clonar con el mismo codigo y este le advertira mediante una “cara enojada” y un sonido que esta siendo robado su pertenencia. Se realiza mediante una funcion llamada alarma la cual sera que ejecute estas acciones.Para realizar de manera fisica vas a necesitar 2 microbits, 2 baterias, auriculares o altavoces y 2 cables de clip de cocodrilo.Dentro del codigo de javascript se procede a realizar la funcion alarma, la cual se le asigna que mostrara en el panel led, en este caso una cara enojada y el sonido que reproducira por una vez, por consiguiente se crea una funcion mas la cual asigna un gesto con el cual se active y sera AGITAR, en donde enviara una senal de “LADRON” al otro microbit y este lo recibira y se activara igualmente.</p>
-<b>SEMAFORO</p></b>
-<p align="center"><img src="img/a1.jpg"/></p>
-Unicamente se lo realizo mediante el lenguaje de programacion por bloques, el cual indica que cada 3 segundos el semáforo en verde dentro del pasador 13 cambiara al siguiente pasador el cual pertenece al amarillo dentro del pasador 12 indicandole que parpapee 3 veces el amarillo durante 3 segundos cada uno, y para pasar como final al rojo dentro del pasador 11 el cual tomara 3 segundos y 10 milisegundos en apagarse y repetir el mismo proceso nuevamente.Para realizar esta practica de manera física se utilizo Arduino uno, placa de pruebas pequeña, 3 resistencias, 3 leds.</p>
-<b>Medidor de temperatura</p></b>
-// creamos una variable y le asignamos 0 como valor</p>
-int valor=0; </p>
-void setup()</p>
-{</p>
-  //colocamos los bits por segundo</p>
-  Serial.begin(9600); </p>
-}</p>
-void loop()</p>
-{</p>
-  //el valor que se leera sera del puerto analogo 1</p>
-  valor = analogRead(1); </p>
-  //en esta variable creamos una ecuacion que nos permite leer</p>
-  //en el monitor serial valores similares a los grados</p>
-  float c = (valor-102)/2;</p>
-  //colocamos el nombre temperatura</p>
-  Serial.print("Temperatura: ");</p>
-  //imprimimos el resultado</p>
-  Serial.println(c);</p>
-  //si la temperatura en grados centigrados es menor que 15</p>
-  //se encendera el led azul</p>
-  if (c<15){</p>
-    digitalWrite(5,HIGH);</p>
-  }else{digitalWrite(5,LOW);</p>
-       }</p>
-  //si la temperatura es mayor o igual que 16 grados y menor que</p>
-  //30 grados entonces se encendera el led verde</p>
-  if (c>=16&&c<30){</p>
-    digitalWrite(3,HIGH);</p>
-  }else{digitalWrite(3,LOW);</p>
-       }</p>
-  //si c es menor que 50 y mayor que 30 entonces se encendera</p>
-  //el led amarillo</p>
-  if (c>=30&&c<50){</p>
-    digitalWrite(3,HIGH);</p>
-  }else{digitalWrite(3,LOW);</p>
-       }</p>
-  //si c es mayor que 50 entonces se encendera el led rojo</p>
-  if (c>50){</p>
-    digitalWrite(2,HIGH);</p>
-  }else{digitalWrite(2,LOW);</p>
-       }</p>
-}</p>
-En este ejercicio trataremos de simular un medidor de temperatura y condicionar a los leds, que representen cierta cantidad de temperatura es decir:</p>
-Temperaturas menor a 15 led azul</p>
-Temperaturas entre 16-30 led verde</p>
-Temperaturas entre 30-50 amarillo</p>
-Temperaturas mayores a 50 rojo.</p>
-Esto se realizo mediante código en TEXTO.</p>
-Para realizar de manera física usaremos Arduino uno, placa de pruebas pequeña, 4 leds, 4 resistencias, sensor de temperatura.</p>
-<b>Hallar el numero FIBONACCI</p></b>
-# Funcion para hallar el numero Fibonacci</p>
-def Fibonacci(n): </p>
-	if n<0: </p>
-		print("Ingreso Incorrecto") </p>
-	# El primer numero Fibonacci es 0</p>
-	elif n==1: </p>
-		return 0</p>
-	# El segundo numero Fibonacci es 1</p>
-	elif n==2: </p>
-		return 1</p>
-	else: </p>
-		return Fibonacci(n-1)+Fibonacci(n-2) </p>
-# Driver Program </p>
-print(Fibonacci(9)) </p>
-# El resultado es 21</p>
-Según la sucesión de Fibonacci cada número es la suma de los dos anteriores, comenzando por 0 y 1, dará como resultado 21 respecto a 9. Se usa Python para definir el numero Fibonacci.</p>
-<b>Números primos en un intervalo</b></p>
-# Programa en Python orientado a escribir los numeros primos en un intervalo</p>
-# Comienza en 11</p>
-start = 11</p>
-# Termina en 25</p>
-end = 25</p>
-for val in range(start, end + 1): </p>
-	if val > 1: </p>
-		for n in range(2, val//2 + 2): </p>
-			if (val % n) == 0: </p>
-				break</p>
-			else: </p>
-				if n == val//2 + 1: </p>
-					print(val) </p>        
-# El resultado es 11,13,17,19,23</p>
-Usaremos lenguaje de programacion Python en donde pondremos todos los números primos en un intervalo del 11 al 25 mediante for,if. Dando como resultado 11,13,17,19,23</p>
 <H3>9. DESCRIPCION DE PRERREQUISITOS Y CONFIGURACION</H3>
 Se debe tener una cuenta en la plataforma de Tinkercad para poder utilizar sus servicios.
+
 <H3>10. APORTACIONES</H3>
 <b>SBC</b></p>
 El SBC (Session Border Controller) es un nuevo componente al alcance de las empresas. Se puede instalar como un appliance o máquina virtual y dispone de funcionalidades que harán que su red de telefonía IP sea mucho más segura y se integre mejor con el equipamiento SIP de diferentes fabricantes y proveedores de servicios.
@@ -252,42 +160,33 @@ Las funciones principales de un SBC son las siguientes:
 •    DETECCIÓN/GENERACIÓN DE DTMF: La señalización DTMF (Dual Tone Multi Frequency) en redes de telefonía IP no siempre es sencilla, ya que algunos codecs no transmiten de forma fiable los tonos debido al uso de algoritmos de compresión con pérdida de ancho de banda que están optimizados para voz. El SBC dispone de la capacidad de implantar correctamente el método estándar RFC2833 para manejar este tipo de señalización(Quarea, s.f.).</p>
 <b>Microprosesador</b></p>
 Se denomina microprocesador al circuito electrónico que procesa la energía necesaria para que el dispositivo electrónico en que se encuentra funcione, ejecutando los comandos y los programas adecuadamente. La Unidad Central de Procesos (CPU) de una computadora es un ejemplo de un microprocesador.Este componente electrónico forma parte de la tarjeta madre de una computadora y se caracteriza por ser un circuito integrado con miles y, a veces, hasta con millones de transistores.Se denomina micro por su significado inglés que indica “pequeño”, en relación a la importancia de su función en un dispositivo, comparado a veces con el cerebro y con el corazón de los seres humanos.Este componente electrónico es el encargado de procesar y ejecutar las instrucciones codificadas en números binarios.El microprocesador es comúnmente conocido como la Unidad Central de Procesos (CPU) de los diferentes dispositivos electrónicos, pero también contienen procesadores otros dispositivos como los discos duros.Es tan importante la función del microprocesador que actualmente es considerado el componente electrónico más influyente en la vida del ser humano.A nivel económico, es el producto más comercializado a nivel mundial y, a nivel social, es el objeto más utilizado, presente en una gran variedad de artefactos y componentes electrónicos, así como, computadores, teléfonos celulares, teléfonos inteligentes y tabletas(Microprocesador, 2020).</p>
-<b>Python</b></p>
-Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código. Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.Es administrado por la Python Software Foundation. Posee una licencia de código abierto, denominada Python Software Foundation License, que es compatible con la Licencia pública general de GNU a partir de la versión 2.1.1, e incompatible en ciertas versiones anteriores(Knowlton, Jim (2009)).</p>
+<b>Wifi</b></p>
+El wifi (escrito también wi fi) es una tecnología que permite la interconexión inalámbrica de dispositivos electrónicos. Los dispositivos habilitados con wifi (tales como ordenadores personales, teléfonos, televisores, videoconsolas, reproductores de música, etcétera) pueden conectarse entre sí o a Internet a través de un punto de acceso de red inalámbrica. Wi-Fi es una marca de la Alianza Wi-Fi, la organización comercial que cumple con los estándares 802.11 relacionados con redes inalámbricas de área local. Su primera denominación en inglés fue Wireless Ethernet Compatibility Alliance (Hernandez, 2018).</p>
 <b>Microcomputadoras</b></p>
  Una microcomputadora, un microcomputador o un microordenador es una computadora pequeña, con un microprocesador como su unidad central de procesamiento CPU. Generalmente, el microprocesador incluye los circuitos de almacenamiento (o memoria caché) y entrada/salida en el mismo circuito integrado (o chip). Las microcomputadoras se hicieron populares desde 1970 y 1980 con el surgimiento de microprocesadores más potentes. Los predecesores de estas computadoras, las supercomputadoras y las minicomputadoras, eran mucho más grandes y costosas (aunque las supercomputadoras modernas, como las IBM System z, utilizan uno o más microprocesadores como CPUs). Muchas microcomputadoras (cuando están equipadas con un teclado y una pantalla para entrada y salida) son también computadoras personales (en sentido general). La abreviatura micro fue comúnmente utilizada durante las décadas de 1970 y de 1980,aunque actualmente esté en desuso(Wikipedia, 2006-2017).</p>
 <H3>11. CONCLUSIONES</H3>
 - Se pudo identificar la ventaja de tener aplicaciones para programación sin descargar nada</p>
-- Dentro de estas plataformas de simulación se pueden hacer cualquier tipo de algoritmos que posteriormente podemos enlazar con los microcomputadores.</p>
+- Dentro de esta plataforma de simulación se puede hacer cualquier tipo de algoritmos que posteriormente podemos enlazar con los microcomputadores o con un dispositivo de conexion wifi.</p>
 -Se pudo aprender a realizar una programación orientada a objetos con una plataforma que usaba similar lenguaje al de scratch.</p>
-- Se pudo practicar y entender la programación con lenguaje de Python, que resultó ser más sencillo que los demás lenguajes.</p>
-- Verificamos que cada una de las plataformas son importantes, una nos brinda más facilidad al programar objetos y otras nos brinda la facilidad de usar un programa sin necesidad de tenerlo instalado.</p>
+-El simulador nos permite exportar codigos y crearlos de fomra facil lo que nos permite reutilizarlo y anclarlo con otras pagnas de internet.</p>
 <H3>12. RECOMENDACIONES</H3>
-<p>-Se recomienda crear una cuenta en cada una de las plataformas para poder tener nuestros archivos guardados</p>
-<p>-Si se tiene un poco conocimiento de lenguajes y de programacion en general se recomienda usar la plataforma de simulacion de python,create with code</p>
-<p>-Si es primera ves en el ambito de programacion se recomienda usar la plataforma tinkercad,ya que muestra una forma mas facil de programar atravez de los objetos</p>
-<p>-Si lo que desea es simular un microprocesaodor o una microcomputadora la plataforma indicada es microbi.org</p>
+<p>-Se recomienda crear una cuenta en cada para poder tener nuestros archivos guardados</p>
+<p>-Si recomienda tener un poco de cuidado al realizar esta simulacion con onjetos fisicos ya que estos se podrian quemar</p>
+<p>-Si es primera ves en el ambito de programacion se recomienda usar la plataforma tinkercad,ya que muestra una forma mas facil de programar atravez de los objetos y ademas nos permite emular un microprocesador como el arduino</p>
 <H3>13. CRONOGRAMA</H3>
 <p align="center"><img src="img/13.png"/></p>
 <H3>14. BIBLIOGRAFIA</H3>
-<p align="justify">Charlton, P., & Poslad, S. (2016). A Sharable Wearable Maker Community IoT Application. 2016 12th International Conference on Intelligent Environments (IE).</p>
-Abu Sulayman, I. I. M., Almalki, S. H. A., Soliman, M. S., & Dwairi, M. O. (2017). Designing and Implementation of Home Automation System Based on Remote</p>
+<p align="justify">Singh, P., & Saikia, S. (2016). Arduino-based smart irrigation using water flow sensor, soil moisture sensor, temperature sensor and ESP8266 WiFi module. 2016 IEEE Region 10 Humanitarian Technology Conference (R10-HTC). doi:10.1109/r10-.</p>
+Rezwan, S., Ahmed, W., Mahia, M. A., & Islam, M. R. (2018). IoT Based Smart Inventory Management System for Kitchen Using Weight Sensors, LDR, LED, Arduino Mega and NodeMCU (ESP8266) Wi-Fi Module with Website and App. 2018 Fourth International Conference on Advances in Computing, Communication & Automation (ICACCA).</p>
 Yamanoor, N. S., & Yamanoor, S. (2017). High quality, low cost education with the Raspberry Pi. 2017 IEEE Global Humanitarian Technology Conference</p>
-[1} JORGE CACHO HERNÁNDEZ, «Raspberry Pi: tutoriales Servidor web, ownCloud y XBMC.,» 27 Enero 2008. [En línea]. Available: file:///C:/Users/home/Downloads/102190284-Raspberry-Pi-tutoriales-servidor-web-ownCloud-y-XBMC.pdf</p>
-[2] Microes, «Caracteristiac y funcionalidades de MicroBit,» Microes, 15 septiembre 2017. [En línea]. Available: http://microes.org/caracteristicas.php</p>
-[3] C. Muñoz, «Historia de la informatica “Raspberry Pi,» Blog sobre Historia de la Informática, 18 Diciembre 2013. [En línea]. Available: https://histinf.blogs.upv.es/2013/12/18/raspberry-pi/#:~:text=Raspberry%20PI%20es%20una%20placa,de%20la%20inform%C3%A1tica%20en%20las</p>
 [4] Maria Sol Vicet Illas, «Historia y defincion de software libre en el mundo e lainformatica inicial,» Ecured.cu, Ecuador, 2017 Available:
 https://www.ecured.cu/Software_libre#:~:text=Seg%C3%BAn%20la%20Free%20Software%20Foundation,programa%2C%20con%20cualquier%20prop%C3%B3sito%3B%20de</p>
 [5] N. SATHISH, KUMAR; B. VUAYALAKSHMI; R. JENIFER PRARTHANA; A. SHANKAR, « IOT BASED SMART GARBAGE ALERT SYSTEM USING ARDUINO UNO,» IEE, 2019
 Available: https://ieeexplore.ieee.org/abstract/document/7848162</p>
 Eudoteca. (s.f.). Eudoteca. Obtenido de Tinkercad: https://www.educoteca.com/tinkercad.html</p>
-Microes. (s.f.). Microes. Obtenido de MicroBit: http://microes.org/que-es-microbit.php</p>
 RoboticaSchool. (2020). RoboticaSchool. Obtenido de Arduino uno: https://www.robotica.school/curso/arduino-00/explicacion-hardware-arduino-uno/</p>
-Wikipedia. (2012-2018). Wikipedia. Obtenido de Raspberry pi: https://es.wikipedia.org/wiki/Raspberry_Pi#Raspberry_Pi_1_modelo_A_(descontinuada)</p>
-Withcode. (s.f.). whitcode. Obtenido de Create a with code: https://blog.withcode.uk/create-with-code-getting-started/</p>
-Code. (2019 de Noviembre de 28). Code,if. Obtenido de La placa microbit: http://code.intef.es/la-placa-microbit/</p>
-Google. (s.f.). Google Imagenes. Obtenido de Electronica y ciencia: https://www.google.com/search?q=explicacion+diagrama+electrico++raspberry</p>
-Pinterest. (s.f.). Pinterest. Obtenido de Pinterest: https://www.pinterest.com/teletrabajo/microbits-proyectos-e-ideas/</p>
+Hernandez, L. d. (2018). ProgramarFacil. Obtenido de ESP8266 todo lo que necesitas saber del módulo WiFi para Arduino: https://programarfacil.com/podcast/esp8266-wifi-coste-arduino/#Especificaciones_del_chip_ESP8266</p>
+Wikipedia. (18 de Junio de 2020). Wikipedia . Obtenido de ESP8266: https://es.wikipedia.org/wiki/ESP8266</p>
 Microprocesador. (junio de 22 de 2020). Obtenido de Significados : https://www.significados.com/microprocesador/</p>
 Quarea. (s.f.). Obtenido de SBC: https://www.quarea.com/es/sbc-componente-indispensable</p>
 Wikipedia. (2006-2017). Wikipedia. Obtenido de Microcomputadoras: https://es.wikipedia.org/wiki/Microcomputadora#:~:text=Una%20microcomputadora%2C%20un%20microcomputador%20o,circuito%20integrado%20(o%20chip).</p>
