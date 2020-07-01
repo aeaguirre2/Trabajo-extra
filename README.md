@@ -4,13 +4,10 @@
 <p align="justify">El hardware de Arduino Uno es un circuito impreso o placa que contiene una MCU o microcontrolador y muchos otros componentes electrónicos que nos permite usar de forma fácil esta MCU en la vida real.También cómo ya hemos comentado las placas de Arduino al ser un hardware de diseño libre sus esquemas están disponibles en internet, para que cualquiera puede hacer su propia placa a su manera.Usar circuitos impresos de Arduino Uno para construir prototipos o proyectos finales como plataforma, es la mejor forma de garantizar la longevidad y continuidad del mismo(Iescamp 2016).</p>
 <H3>2. OBJETIVOS</H3>
 <b>Objetivos Generales</b>
-<p align="justify">- Desarrollar correctamente los literales propuestos en el trabajo del Producto Unidad.</p>
-<p align="justify">- Identificar cual de las 3 plataformas es la mejor.</p>
+<p align="justify">- Desarrollar correctamente y bien explicado el tutorial de simulador de Arduino en Tinkercad.</p>
 <b>Objetivos Específicos</b>
-<p align="justify">- Realizar una indagacion Bibliografica sobre la raspberry pi,arduino uno y microbit.</p>
-<p align="justify">- Describir los componentes y caracteristicas de cada uno de los hardwares.</p>
-<p align="justify">- Realizar dos ejemplos de programacion en cada una de las plataformas.</p>
-<p align="justify">- Identificar que plataforma nos brinda mas facilidad a la hora de utilizarla.</p>
+<p align="justify">- Realizar una indagacion Bibliografica sobre Arduino y ESP82.</p>
+<p align="justify">- Describir los componentes y caracteristicas del Arduino.</p>
 <H3>3. ESTADO DEL ARTE</H3>
 <b>Educación de alta calidad y bajo costo con Raspberry Pi</b><br>
 <p align="justify">La computadora de placa única Raspberry Pi (SBC) ha ganado popularidad en diversas áreas, mientras que la educación sigue siendo el impulsor fundamental detrás del diseño. Bajo los kits de costos son provistos, específicamente para educación, por Fundación Raspberry Pi en conjunto con Google. Estos kits Modificaciones son usados para resultados educativos óptimos. El tutorial consiste en ejemplos de proyectos y ejemplos de código que pueden ser adaptado rápidamente para diversas situaciones de aprendizaje. Una lista de hardware o BOM, poblada y optimizada para un aprendizaje rentable y efectivo será proporcionado. La familia Raspberry Pi y la familia Arduino también se puede usar para educación, como alternativas o en combinación con la Raspberry Pi Zero y las diferencias serán destacadas y discutidas. Numerosas webs están en continua evolución de recursos, así como implementaciones de hardware financiadas por crowdfunding están disponibles para adaptarlos a la educación, la configuración se discutirá brevemente.<br><br> 
