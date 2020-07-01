@@ -174,7 +174,7 @@ El wifi (escrito también wi fi) es una tecnología que permite la interconexió
 <p>-Si recomienda tener un poco de cuidado al realizar esta simulacion con onjetos fisicos ya que estos se podrian quemar</p>
 <p>-Si es primera ves en el ambito de programacion se recomienda usar la plataforma tinkercad,ya que muestra una forma mas facil de programar atravez de los objetos y ademas nos permite emular un microprocesador como el arduino</p>
 <H3>13. CRONOGRAMA</H3>
-<p align="center"><img src="img/13.png"/></p>
+<p align="center"><img src="img/10.png"/></p>
 <H3>14. BIBLIOGRAFIA</H3>
 <p align="justify">Singh, P., & Saikia, S. (2016). Arduino-based smart irrigation using water flow sensor, soil moisture sensor, temperature sensor and ESP8266 WiFi module. 2016 IEEE Region 10 Humanitarian Technology Conference (R10-HTC). doi:10.1109/r10-.</p>
 Rezwan, S., Ahmed, W., Mahia, M. A., & Islam, M. R. (2018). IoT Based Smart Inventory Management System for Kitchen Using Weight Sensors, LDR, LED, Arduino Mega and NodeMCU (ESP8266) Wi-Fi Module with Website and App. 2018 Fourth International Conference on Advances in Computing, Communication & Automation (ICACCA).</p>
