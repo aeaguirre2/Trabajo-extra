@@ -2,6 +2,7 @@
 <p align="center"><img src="img/e.png"/></p>
 <H3>1. PLANTEAMIENTO DEL PROBLEMA</H3>
 <p align="justify">El hardware de Arduino Uno es un circuito impreso o placa que contiene una MCU o microcontrolador y muchos otros componentes electrónicos que nos permite usar de forma fácil esta MCU en la vida real.También cómo ya hemos comentado las placas de Arduino al ser un hardware de diseño libre sus esquemas están disponibles en internet, para que cualquiera puede hacer su propia placa a su manera.Usar circuitos impresos de Arduino Uno para construir prototipos o proyectos finales como plataforma, es la mejor forma de garantizar la longevidad y continuidad del mismo(Iescamp 2016).</p>
+<p>El ESP8266 es un chip de bajo costo Wi-Fi con un stack TCP/IP completo y un microcontrolador, fabricado por Espressif, una empresa afincada en Shanghái, China.El primer chip se hace conocido en los mercados alrededor de agosto de 2014 con el módulo ESP-01, desarrollado por la empresa AI-Thinker. Este pequeño módulo permite a otros microcontroladores conectarse a un red inalámbrica Wi-Fi y realizar conexiones simples con TCP/IP usando comandos al estilo Hayes.El ESP8285 es como un ESP8266 pero con 1 MB de memoria flash interna, para permitir a dispositivos de un chip conexiones de Wi-Fi.3.El sucesor de estos módulos es el ESP32.</p>
 <H3>2. OBJETIVOS</H3>
 <b>Objetivos Generales</b>
 <p align="justify">- Desarrollar correctamente y bien explicado el tutorial de simulador de Arduino en Tinkercad.</p>
