@@ -54,13 +54,13 @@ La definición clásica de tierra (en inglés de Estados Unidos ground de donde 
 En muchas ocasiones cuando estamos trabajando en nuestros proyectos electrónicos se es necesario trabajar a X voltaje de referencia. Supongamos que tenemos un sensor de temperatura LM35, este sensor ofrece una salida de tensión lineal con respecto a la temperatura, utiliza un factor de escala de 10 mV/°C. Imaginemos entonces que necesitamos este sensor para medir la temperatura de cierto lugar utilizando nuestro Arduino UNO. Para poder leer la temperatura del lugar necesitamos convertir la medida de temperatura que es una medida física a otra de tipo eléctronico. Este trabajo es el que precisamente hace el sensor. Ahora, el voltaje de salida que nos proporciona el LM35 es una señal analógica que debemos convertirla a una señal digital para poder procesarla, el mago que realiza este proceso se llama Conversor Analógico/Digital.</p>
 •	Chip de comunicación:</p>
 Este chip de comunicaciones multiprotocolo incorpora una gran selección de periféricos analógicos y digitales que pueden interactuar sin intervención de la CPU a través del sistema PPI (Programmable Peripheral Interconnect).Un esquema de mapeado flexible de GPIO de 31 pines permite E/S como, por ejemplo, interfaces serie, PWM, y demodulación de cuadratura para ser mapeado en cualquier pin de dispositivo tal y como dictan los requisitos PCB. Esto permite una total flexibilidad de diseño asociada con la ubicación pinout y la función.</p>
-<p align="center"><img src="img/2.jpg"/></p>
+<p align="center"><img src="Imagenes/2.jpg"/></p>
 ii. https://www.tinkercad.com/</p>
 Tinkercad es un software gratuito online creado por la empresa Autodesk, una de las empresas punteras en el software de diseño 3D de la mano de su programa estrella para tal fin, Inventor.El objetivo al usar Tinkercad debe ser una primera inmersión en el mundo del diseño 3D de una manera sencilla y atractiva, ya que la interfaz de trabajo es simple y muy atractiva inicialmente, si bien una vez dominados los conceptos básicos carece de herramientas para llegar a diseños complejos.Sus ventajas son claras: es sencillo de usar, su aspecto es atractivo y con unas pocas horas de entrenamiento podemos adquirir mucha destreza en su uso.Como desventaja podríamos señalar que es necesario tener una cuenta de correo para darse de alta como usuario y que sólo posee una versión online, por lo que hace falta conexión a internet.Vamos a realizar una guía de manejo básico para dominar las herramientas más usuales de trabajo. Tras los videotutoriales tienes un tutorial redactado paso a paso.El aspecto del software al comenzar un nuevo diseño es el que se muestra en la imagen. Sin extendernos en mucha explicación: en la esquina superior izquierda tenemos el botón “Tinkercad” para volver a nuestra pantalla de inicio como usuarios, en la zona inferior de la misma tenemos botones para controlar el punto de vista de nuestro diseño y el zoom sobre el mismo (aunque ambas opciones se pueden realizar con los botones del ratón o trackpad). En la zona derecha tenemos una serie de menús desplegables con opciones de diseño directas (formas geométricas, letras, símbolos...). En la zona superior tenemos los iconos de deshacer y rehacer y una serie de accesos directos a herramientas de trabajo y de diseño que se explicarán más adelante. En el centro nos encontramos el plano de trabajo (“Workplane”)(Eudoteca,https://www.educoteca.com/tinkercad.html).
-<p align="center"><img src="img/3.jpg"/></p>
+<p align="center"><img src="Imagenes/3.jpg"/></p>
 <H3>5. DIAGRAMAS</H3>
 <b>Aurduino uno</b></p>
-<p align="center"><img src="img/4.png"/></p>
+<p align="center"><img src="Imagenes/4.png"/></p>
 •	Pines digitales: http://www.arduino.cc/en/Tutorial/DigitalPins, pueden configurarse como entrada (para leer, sensores) o como salida (para escribir, actuadores)
 •	Pines analógicos de entrada: https://www.arduino.cc/en/Tutorial/AnalogInputPins, usan un conversor analógico/digital y sirven para leer sensores analógicos como sondas de temperatura.
 •	Pines analógicos de salida (PWM): https://www.arduino.cc/en/Tutorial/PWM, la mayoría de Arduino no tienen conversor digital/analógico y para tener salidas analógicas se usa la técnica PWM. No todos los pines digitales soportan PWM.
@@ -106,9 +106,9 @@ Tinkercad es un software gratuito online creado por la empresa Autodesk, una de 
 •	Led pin 13</p>
 •	Pines de programación ISCP</p>
 •	Chip de comunicación</p>
-<p align="center"><img src="img/5.jpg"/></p>
+<p align="center"><img src="Imagenes/5.jpg"/></p>
 <H3>7. MAPA DE VARIABLES</H3>
-<p align="center"><img src="img/6.PNG"/></p>
+<p align="center"><img src="Imagenes/6.PNG"/></p>
 <H3>8. EXPLICACION DEL CODIGO FUENTE</H3>
 <b>MELODIAS TACTILES DE UNA GUITARRA</p></b>
 input.onPinPressed(TouchPin.P2, function () {</p>
