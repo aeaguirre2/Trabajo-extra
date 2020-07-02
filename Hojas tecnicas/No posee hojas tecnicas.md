@@ -1,1 +1,0 @@
-No posee hojas tecnicas
