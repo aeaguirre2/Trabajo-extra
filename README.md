@@ -143,9 +143,32 @@ o	Soporte de autenticación WEP y WPA/WPA2</p>
 <H3>7. MAPA DE VARIABLES</H3>
 <p align="center"><img src="Imagenes/6.PNG"/></p>
 <H3>8. EXPLICACION DEL CODIGO FUENTE</H3>
+El codigo fuente en si no existe de la simulacion de la tarjeta ESP8266 pero hay un codigo de un ejemplo parecido con señales externas</p>
+<b>Simulador señales infrarojas</b></p>
+int sensor = 0;</p>
+void setup()</p>
+{</p>
+  pinMode(9, INPUT);</p>
+  Serial.begin(9600);</p>
+  pinMode(7, OUTPUT);</p>
+}</p>
+void loop()</p>
+{</p>
+  sensor = digitalRead(9);</p>
+  Serial.println(sensor);</p>
+  if (sensor == 0) {</p>
+    digitalWrite(7, HIGH);</p>
+    delay(1000); //Para poder ver el cambio</p>
+  }</p>
+  if (sensor == 1) {</p>
+    digitalWrite(7, LOW);</p>
+  }</p>
+  delay(10);</p>
+}</p>
+Se inicializa la variable entera sensor con 0, colocamas una variable de tipo void(vacio) en setup, Se le ingresa el valor de 9 al pin y por ende sale el valor 7, se le coloca el print que es para mostrar en la pantalla lo que pasa con el sensor al momento de realizar la entrada de datos, se le coloca un condicional if para el canso en que vale 0 la intensidad de luz del led se aumenta por arriba de 7 con un overlay de 1000, y para cuando es 1 la intensidad se baja de 7 con un overlay de 10, esto nos permite demostrar que dependiendo de las señales externas que recibamos en nuestro circuito a travez de un sensor, en este caso sensor infrarojo, ocurre una intensidad de iluminacion diferente en el led</p>
 <H3>9. DESCRIPCION DE PRERREQUISITOS Y CONFIGURACION</H3>
-Se debe tener una cuenta en la plataforma de Tinkercad para poder utilizar sus servicios.
-
+Se debe tener una cuenta en la plataforma de Tinkercad para poder utilizar sus servicios.</p>
+En el caso de que hubiera funcionado la simulacion de ESP8266 se necesitaria una cuenta en ThingSpeak como es el caso contrario no se necesita nada adicional para la simulacion de infrarojo</p>
 <H3>10. APORTACIONES</H3>
 <b>SBC</b></p>
 El SBC (Session Border Controller) es un nuevo componente al alcance de las empresas. Se puede instalar como un appliance o máquina virtual y dispone de funcionalidades que harán que su red de telefonía IP sea mucho más segura y se integre mejor con el equipamiento SIP de diferentes fabricantes y proveedores de servicios.
