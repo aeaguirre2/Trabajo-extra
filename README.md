@@ -189,9 +189,9 @@ El wifi (escrito también wi fi) es una tecnología que permite la interconexió
  Una microcomputadora, un microcomputador o un microordenador es una computadora pequeña, con un microprocesador como su unidad central de procesamiento CPU. Generalmente, el microprocesador incluye los circuitos de almacenamiento (o memoria caché) y entrada/salida en el mismo circuito integrado (o chip). Las microcomputadoras se hicieron populares desde 1970 y 1980 con el surgimiento de microprocesadores más potentes. Los predecesores de estas computadoras, las supercomputadoras y las minicomputadoras, eran mucho más grandes y costosas (aunque las supercomputadoras modernas, como las IBM System z, utilizan uno o más microprocesadores como CPUs). Muchas microcomputadoras (cuando están equipadas con un teclado y una pantalla para entrada y salida) son también computadoras personales (en sentido general). La abreviatura micro fue comúnmente utilizada durante las décadas de 1970 y de 1980,aunque actualmente esté en desuso(Wikipedia, 2006-2017).</p>
 <H3>11. CONCLUSIONES</H3>
 - Se pudo identificar la ventaja de tener aplicaciones para programación sin descargar nada</p>
-- Dentro de esta plataforma de simulación se puede hacer cualquier tipo de algoritmos que posteriormente podemos enlazar con los microcomputadores o con un dispositivo de conexion wifi.</p>
 -Se pudo aprender a realizar una programación orientada a objetos con una plataforma que usaba similar lenguaje al de scratch.</p>
--El simulador nos permite exportar codigos y crearlos de fomra facil lo que nos permite reutilizarlo y anclarlo con otras pagnas de internet.</p>
+-El simulador nos permite exportar codigos y crearlos de fomra facil lo que nos permite reutilizarlo y anclarlo .</p>
+-No se pudo realizar la simulacion debido a un error en la plataforma tinkercad , ya que las señales que venian de una pagina web externa a nuestro circuito tenian errores y por lo tanto la plataforma decidio quitar la tarjeta ESP8266 de su editor de codigos y circuitos</p>
 <H3>12. RECOMENDACIONES</H3>
 <p>-Se recomienda crear una cuenta en cada para poder tener nuestros archivos guardados</p>
 <p>-Si recomienda tener un poco de cuidado al realizar esta simulacion con onjetos fisicos ya que estos se podrian quemar</p>
