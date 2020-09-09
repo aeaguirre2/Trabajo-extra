@@ -38,6 +38,7 @@ Los chatbots tienen su origen en 1966, cuando Joseph Weizenbaum creó el primer 
 <p align="center"><img src="Imagenes/112.png"/></p>
 <H3>7. MAPA DE VARIABLES</H3>
 <p align="center"><img src="Imagenes/113.jpeg"/></p>
+<p align="center"><img src="Imagenes/115.png"/></p>
 <H3>8. EXPLICACION DEL CODIGO FUENTE</H3>
 No tiene codigo fuente
 <H3>9. DESCRIPCION DE PRERREQUISITOS Y CONFIGURACION</H3>
@@ -52,11 +53,9 @@ Es una aplicación de mensajería gratuita que le permite monitorear y conversar
 + Se logro identificar los principales elementos para la elaboracion de un chatbot y posteriroemente se logro implementar el cahtbot
 + Mediante la investigación y la implementación del ejercicio propuesto se llegó a conocer que varias de las herramientas proporcionadas por Watson son para el mejoramiento e implementación de detalles al chatbot
 <H3>12. RECOMENDACIONES</H3>
-<p>-Se recomienda crear una cuenta en cada para poder tener nuestros archivos guardados</p>
-<p>-Si recomienda tener un poco de cuidado al realizar esta simulacion con onjetos fisicos ya que estos se podrian quemar</p>
-<p>-Si es primera ves en el ambito de programacion se recomienda usar la plataforma tinkercad,ya que muestra una forma mas facil de programar atravez de los objetos y ademas nos permite emular un microprocesador como el arduino</p>
+Se recomienda crear una cuenta de IBM para poder constar de todos los benedificios de dicha herramienta ademas de que se encesita tener conocimientos aprendidos en la materia de arquitecura de computadoras ya que en base a ellos se puede realizar cualquier tipo de proyecto,
 <H3>13. CRONOGRAMA</H3>
-<p align="center"><img src="Imagenes/114.jepg"/></p>
+<p align="center"><img src="Imagenes/114.jpeg"/></p>
 <H3>14. BIBLIOGRAFIA</H3>
 <p align="justify">Singh, P., & Saikia, S. (2016). Arduino-based smart irrigation using water flow sensor, soil moisture sensor, temperature sensor and ESP8266 WiFi module. 2016 IEEE Region 10 Humanitarian Technology Conference (R10-HTC). doi:10.1109/r10-.</p>
 Rezwan, S., Ahmed, W., Mahia, M. A., & Islam, M. R. (2018). IoT Based Smart Inventory Management System for Kitchen Using Weight Sensors, LDR, LED, Arduino Mega and NodeMCU (ESP8266) Wi-Fi Module with Website and App. 2018 Fourth International Conference on Advances in Computing, Communication & Automation (ICACCA).</p>
