@@ -24,86 +24,18 @@ La extensión de la tecnología es ineludible. Cada innovación se crea para ten
 Los chatbots tienen su origen en 1966, cuando Joseph Weizenbaum creó el primer chatbot basado en inteligencia artificial, Eliza, que actuaba como terapeuta.Los más avanzados, son programas capaces de mantener una conversación lógica y pseudo inteligente en un determinado idioma. Algunos de los más complejos están programados en C++, Delphi o similares, y otros más sencillos en Action Script, PHP, VBScript, etc. Pueden ser consultados además de mediante software instalado en un ordenador personal, vía web y vía aplicaciones instaladas en teléfonos inteligentes (entre las mismas, cabe mencionar a Siri y SimSimi,entre otros muchos). Existen muchos otros con amplia presencia en redes de IRC, donde son conocidos como bots de charla o bots de chat.(RoboticaSchool,2020)</p>
 <b>IBM Watson</b></p>
 •	Watson es un sistema informático para búsqueda de respuestas (question answering en inglés), desarrollado por IBM. La corporación lo describe como "una aplicación de tecnologías avanzadas diseñadas para el procesamiento de lenguajes naturales, la recuperación de información, la representación del conocimiento, el razonamiento automático, y el aprendizaje automático al campo abierto de búsquedas de respuestas," que es "construido en la tecnología DeepQA de IBM para la generación de hipótesis, la recopilación de pruebas masivas, el análisis y la calificación.Watson responde a las preguntas gracias a una base de datos almacenada localmente. La información contenida en esa base de datos proviene de multitud de fuentes, incluyendo enciclopedias, diccionarios, tesauros, artículos de noticias, y obras literarias, al igual que bases de datos externos, taxonomías, y ontologías (específicamente DBpedia, WordNet).(Wikipedia,2012-2018)</p>
-<p align="center"><img src="Imagenes/2.jpg"/></p>
+<p align="center"><img src="Imagenes/1.jpg"/></p>
 <H3>5. DIAGRAMAS</H3>
-<b>Aurduino uno</b></p>
-<p align="center"><img src="Imagenes/4.png"/></p>
-•	Pines digitales: http://www.arduino.cc/en/Tutorial/DigitalPins, pueden configurarse como entrada (para leer, sensores) o como salida (para escribir, actuadores)
-•	Pines analógicos de entrada: https://www.arduino.cc/en/Tutorial/AnalogInputPins, usan un conversor analógico/digital y sirven para leer sensores analógicos como sondas de temperatura.
-•	Pines analógicos de salida (PWM): https://www.arduino.cc/en/Tutorial/PWM, la mayoría de Arduino no tienen conversor digital/analógico y para tener salidas analógicas se usa la técnica PWM. No todos los pines digitales soportan PWM.
-•	Puertos de comunicación: USB, serie, I2C y SPI
-•	SRAM: donde Arduino crea y manipula las variables cuando se ejecuta. Es un recurso limitado y debemos supervisar su uso para evitar agotarlo.
-•	EEPROM:  memoria no volátil para mantener datos después de un reset o apagado. Las EEPROMs tienen un número limitado de lecturas/escrituras, tener en cuenta a la hora de usarla.
-•	Flash: Memoria de programa. Usualmente desde 1 Kb a 4 Mb (controladores de familias grandes). Donde se guarda el sketch.
-•	No necesita de un cable FTDI para conectarse al MCU, en su lugar uso una MCU ATMEGA16U2 especialmente programado para trabajar como conversor de USB a serie.
-•	Alimentación: vía USB, batería o adaptador AC/DC a 5V, seleccionado automáticamente. Arduino puede trabajar entre 6 y 20V, pero es recomendado trabajar entre 7 y 12V por las características del regulador de tensión.
-•	Puerto Serie en los pines 0 y 1.
-•	Interrupciones externas en los pines 2 y 3.
-•	Built-in LED en el pin 13.
-•	Bus TWI o I2C en los pines A4 y A5 etiquetados como SDA y SCL o pines específicos
-•	El MCU ATmega328P tiene un bootloader precargado que permite cargar en la memoria flash el nuevo programa o sketch sin necesidad de un HW externo.
-•	Fusible rearmable de intensidad máxima 500mA. Aunque la mayoría de pc’s ya ofrecen protección interna se incorpora un fusible con la intención de proteger tanto la placa Arduino como el bus USB de sobrecargas y cortocircuitos. Si circula una intensidad mayor a 500mA por el bus USB(Intensidad máxima de funcionamiento), el fusible salta rompiendo la conexión de la alimentación.
-•	Regulador de voltaje LP2985 de 5V a 3.3V que proporciona una corriente de alimentación máxima de 150 mA.
-•	Regulador de voltaje NCP1117 que proporciona un valor estable de 5V a la placa y soporta por encima de 1 A de corriente. Datasheet:  http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
-•	ATMEGA16U2 => Es el chip encargado de convertir la comunicación del puerto USB a serie.
-•	Condensadores de 47µF de capacidad
-•	Diodo M7 en la entrada de alimentación de la placa. Con este diodo conseguimos establecer el sentido de circulación de la intensidad, de esta forma si se produce una contracorriente debido a la apertura de un relé u otros mecanismos eléctricos, el diodo bloquea dicha corriente impidiendo que afecte a la fuente de alimentación.
-•	DFU-ICSP. Puerto ICSP para el microcontrolador ATMEGA16U2, como en el caso del ATMEGA328P-PU se emplea para comunicarnos con el microcontrolador por el serial, para reflashearlo con el bootloader, hacer algunas modificaciones, ponerlo en modo DFU, etc..
-•	JP2. Pines libres del ATMEGA16U2, dos entradas y dos salidas para futuras ampliaciones.
-•	Encapsulados de resistencias.
-•	RESET-EN: Significa Reset enabled o reset habilitado. Está habilitado el auto-reset, para deshabilitar por cualquier tipo de seguridad (por ejemplo un proyecto que tenemos funcionando y no queremos que nadie lo reinicie al conectar un USB y detecte un stream de datos) debemos desoldar los pads RESET-EN y limpiarlos de forma que estén aislados el uno del otro.
-•	Cristal oscilador de 16MHz necesario para el funcionamiento del reloj del microcontrolador ATMEGA16U2.
-•	Resonador cerámico de 16 Mhz para el microcontrolador ATMEGA328P-PU. Los resonadores cerámicos son menos precisos que los cristales osciladores, pero para el caso hace perfectamente la función y ahorramos bastante espacio en la placa. Se trata del pequeño, porque el cristal grande es para el 16U2 (Code, 28).</p>
-<b>ESP8266</b></p>
-<p align="center"><img src="Imagenes/9.png"/></p>
-Hardware</p>
-Utiliza una CPU Tensilica L106 32-bit</p>
-Voltaje de operación entre 3V y 3,6V</p>
-Corriente de operación 80 mA</p>
-Temperatura de operación -40ºC y 125ºC</p>
-Conectividad</p>
-Soporta IPv4 y los protocolos TCP/UDP/HTTP/FTP</p>
-No soporta HTTPS en un principio. Si que lo hace mediante software tanto en cliente como servidor TLS1.2. La primera implementación está todavía en desarrollo.</p>
-Puertos GPIO (de propósito general)</p>
-Tiene 17 puertos GPIO pero solo se pueden usar 9 o 10. El GPIO16 es especial ya que está conectado al RTC (Real Time Clock).</p>
-Pueden ser configurados con resistencia Pull-up o Pull-down.</p>
-Soporta los principales buses de comunicación (SPI, I2C, UART).</p>
-Características eléctricas</p>
-Voltaje de trabajo entre 3V y 3,6V.</p>
-Según noticias del propio CEO de Espressif, admite tensiones de entrada de 5V e los puertos GPIO.</p>
+
 <H3>6. LISTA DE COMPONENTES</H3>
-<b>Aurduino uno</b></p>
-•	Conector USB</p>
-•	Regulador de voltaje de 5V</p>
-•	Plug de conexión para fuente de alimentación externa</p>
-•	Puerto de conexiones</p>
-•	Puertos de entradas análogas</p>
-•	Microcontrolador ATmega 328</p>
-•	Botón Reset</p>
-•	Pines de programación ICSP</p>
-•	Led ON</p>
-•	Leds de Recepción y Transmisión</p>
-•	Puertos de conexiones de pines de entradas o salidas digitales</p>
-•	Puerto de conexiones 5 entradas o salidas adicionales</p>
-•	salida a tierra GND</p>
-•	pin AREF</p>
-•	Led pin 13</p>
-•	Pines de programación ISCP</p>
-•	Chip de comunicación</p>
+<b>IBM Watson</b></p>
+- Accseso a internet
+- Correo electronico
+- Cuenta en IBM Watson
+- Idea o nesecidad para plantear el chatbot
+- Accseso a un computador
 <p align="center"><img src="Imagenes/5.jpg"/></p>
-<b>ESP8266</b></p>
-CPU RISC de 32-bit: Tensilica Xtensa LX106 a un reloj de 80 MHz</p>
-•	RAM de instrucción de 64 KB, RAM de datos de 96 KB</p>
-•	Capacidad de memoria externa flash QSPI - 512 KB a 4 MB* (puede soportar hasta 16 MB)</p>
-•	IEEE 802.11 b/g/n Wi-Fi</p>
-o	Tiene integrados: TR switch, balun, LNA, amplificador de potencia de RF y una red de adaptación de impedancias</p>
-o	Soporte de autenticación WEP y WPA/WPA2</p>
-•	16 pines GPIO (Entradas/Salidas de propósito general)</p>
-•	SPI, IC,</p>
-•	Interfaz IS con DMA (comparte pines con GPIO)</p>
-•	Pines dedicados a UART, más una UART únicamente para transmisión que puede habilitarse a través del pin GPIO2</p>
-•	1 conversor ADC de 10-bit</p>
-<p align="center"><img src="Imagenes/8.png"/></p>
+
 <H3>7. MAPA DE VARIABLES</H3>
 <p align="center"><img src="Imagenes/6.PNG"/></p>
 <H3>8. EXPLICACION DEL CODIGO FUENTE</H3>
