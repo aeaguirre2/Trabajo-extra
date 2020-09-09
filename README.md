@@ -10,15 +10,69 @@
 <p align="justify">- REmplear las herramientas que nos brinda IBM Watson.</p>
 <p align="justify">- Implementar un ejemplo funcional sobre un chatbot.</p>
 <H3>3. ESTADO DEL ARTE</H3>
-<b>Riego inteligente basado en Arduino utilizando sensor de flujo de agua, sensor de humedad del suelo, sensor de temperatura y módulo WiFi ESP8266</b><br>
-<p align="justify">La computadora de placa única Raspberry Pi (SBC) ha ganado popularidad en diversas áreas, mientras que la educación sigue siendo el impulsor fundamental detrás del diseño. Bajo los kits de costos son provistos, específicamente para educación, por Fundación Raspberry Pi en conjunto con Google. Estos kits Modificaciones son usados para resultados educativos óptimos. El tutorial consiste en ejemplos de proyectos y ejemplos de código que pueden ser adaptado rápidamente para diversas situaciones de aprendizaje. Una lista de hardware o BOM, poblada y optimizada para un aprendizaje rentable y efectivo será proporcionado. La familia Raspberry Pi y la familia Arduino también se puede usar para educación, como alternativas o en combinación con la Raspberry Pi Zero y las diferencias serán destacadas y discutidas. Numerosas webs están en continua evolución de recursos, así como implementaciones de hardware financiadas por crowdfunding están disponibles para adaptarlos a la educación, la configuración se discutirá brevemente.<br><br> 
-Nuestro objetivo es describir el uso de Single Board Computadoras (SBC) como Raspberry Pi y Microcontroladores como Arduino en la creación rentable de soluciones para promover la educación STEM en países en desarrollo. Nuestra experiencia ha sido principalmente con Raspberry Pi y por eso escribimos sobre ese sistema. Esto no es una recomendación y es solo un modelo. Varios SBC y Los microcontroladores están disponibles en el mercado y potencialmente incluso los nuevos pueden diseñarse según sea necesario. Una comparación y un ajuste ideal para un conjunto dado de escenarios de instrucción son fuera del alcance de este trabajo. Hay varios recursos disponibles para este propósito(Yamanoor, N. S., & Yamanoor, S. (2017)).<br><br>
- <b>Diseño e implementacion de un hogar con sistema de automatizacion basado en teledeteccion tecnica con microcontrolador Arduino Uno</b><br>
-Este artículo propone y demuestra una forma económica y fácil de utilizar un sistema de riego controlado basado en arduino. El sistema se ocupa de varios factores ambientales como la humedad, temperatura y cantidad de agua requerida por los cultivos utilizando sensores como sensor de flujo de agua, sensor de temperatura y suelo, sensor de humedad. Los datos son recopilados y recibidos por arduino que se puede vincular a un sitio web interactivo que muestra los valores en tiempo real junto con los valores estándar de diferentes factor requerido por un cultivo. Esto permite al usuario controlar el riego. Bombas y rociadores a larga distancia a través de un sitio web y para cumplir con los valores estándar que ayudarían al agricultor a rendir cultivos máximos y de calidad. Estudios realizados en laboratorio. el prototipo sugirió que el sistema diseñado sea aplicable, el cual puede ser implementado.<br><br>
-La evolución de la tecnología de la información ha abierto puertas a muchas imposibilidades. Con los años, nuestros teléfonos celulares, tabletas, automóviles, el auge de la tecnología "inteligente" ha consumido el mercado y se han convertido en el nuevo estándar en las industrias. El riego inteligente es una de esas tecnologías que ha atraído interés de muchos investigadores y está evolucionando y mejorando desde aproximadamente una década.Esta industria de riego inteligente donde el agua el desperdicio se minimiza y ya no es sostenible socialmente, económica y convencionalmente también(Singh, P., & Saikia, S. (2016)).<br><br>
-<b>Sistema de gestión de inventario inteligente basado en IoT para Cocina con sensores de peso, LDR, LED, Wi-Fi Arduino Mega y NodeMCU (ESP8266) Módulo con sitio web y aplicación</b>
-<p align="justify">Sistema inteligente de gestión de inventario de cocina(SIMS) es un sistema basado en IoT, que hará manejo de inventario de cocina, medicina, restaurante más eficiente y sin problemas. Esto no solo notificará a los usuarios de su inventario actual, pero también ordena automáticamente nuevos artículos si la cantidad es baja. Los usuarios también pueden ordenar manualmente en línea para obtener cualquier artículo entregado en su puerta directamente desde sus SIMS aplicación El usuario también puede generar una lista de un período de tiempo determinado para que el usuario podrá saber sobre sus gastos. Además, el usuario puede rastrear el estado de su pedido y su historial a través del sitio web. Con la ayuda de Smart Kitchen Inventory (SKI), una parte de SIMS, la gente puede olvidarse de la molestia de comprar comestibles como puede ser operado desde cualquier lugar a través del sitio web o el Android aplicación y pedir todo lo que necesiten cuando lo deseen..<br><br>
-La extensión de la tecnología es ineludible. Cada innovación se crea para tener un impacto constructivo en la vida de los humanos. En la era del avance tecnológico, todos los días se están construyendo nuevas ideas y prototipos que se están apoderando en algunos campos de nuestras actividades diarias. Estas tecnologías han facilitando la vida de todos, incluso más de lo que cualquiera puede pensar. Aunque la vida se hace más fácil, las personas también pasan más ocupadas a medida que pasa cada día. Las personas no tienen tiempo para simples tareas como ir de compras, que es simple pero necesario para una casa. A medida que avanzamos hacia la digitalización, nuestra vida y nuestros estilos de vida son cada vez más inteligentes. Ahí son múltiples dispositivos inteligentes ya disponibles en el mercado, como teléfono, TV, etc.Además, la cocina es un lugar importante en la casa que se compone de muchos dispositivos inteligentes que están destinados a proporcionar mejores servicios para un hogar. Es solo un asunto de tiempo que la gente va a necesitar un dispositivo inteligente para manejar sus comestibles. Anteriormente Samsung, LG hizo una nevera inteligente. Sin embargo, este refrigerador inteligente solo puede ayudar a ver lo que hay dentro de la nevera desde un lugar remoto y los usuarios tienen que ir de compras solos. Muchas personas habían trabajado previamente en el sistema de gestión de inventario de los hogares y E-shopping por separado(Rezwan, S., Ahmed, W., Mahia, M. A., & Islam, M. R. (2018)).<br><br></p>
+<b>Implementación de Chatbot para ITSM
+Aplicación que utiliza IBM Watson</b><br>
+<p align="justify">En el escenario actual, el usuario final de Información
+Aplicación de gestión de servicios tecnológicos (ITSM) en software
+las empresas deben seguir buscando la solución a los problemas que
+enfrenta o generar finalmente un ticket ya que no puede
+colaborar con el sistema haciendo preguntas y obteniendo
+respuestas relevantes. Como solución a esto, nuestro objetivo es diseñar un chatbot
+que se adaptará específicamente a los empleados de empresas de software. los
+El chatbot puede procesar la entrada mediante el procesamiento de lenguaje natural.
+(PNL) y puede generar una respuesta relevante que ayude al
+usuario final para resolver su consulta. El chatbot toma decisiones por sí mismo para
+responder la consulta del usuario con la ayuda de IBM Watson
+API de conversación. También recordará el contexto de la
+conversación y realizar tareas como la creación de un ticket en
+nombre del usuario.(Godse, N. A., Deodhar, S., Raut, S., & Jagdale, P. (2018)).<br><br>
+ <b>Soporte para estudiantes multilingüe interactivo de voz
+Sistema que utiliza IBM Watson</b><br>
+Los sistemas impulsados ​​por inteligencia artificial son
+siendo desarrollado para ser más fácil de usar al comunicar
+con los usuarios en una forma de conversación progresivamente "humana".
+Chatbots, también conocidos como sistemas de diálogo, interactivos
+agentes conversacionales, o agentes virtuales son un ejemplo de tales
+sistemas utilizados en una amplia variedad de aplicaciones que van desde
+atención al cliente en el ámbito empresarial a la compañía en
+el sector de la salud. Cada vez es más importante
+desarrollar chatbots que puedan responder mejor a las necesidades personalizadas
+de sus usuarios, de modo que puedan ser tan útiles para el usuario como
+posible de una manera humana real. Este artículo investiga y
+compara tres ofertas populares de API de chatbots existentes y
+luego proponer y desarrollar una voz interactiva y multilingüe
+chatbot que puede responder eficazmente al estado de ánimo, el tono y
+lenguaje utilizando IBM Watson Assistant, Tone Analyzer y
+Traductor de lenguaje. El chatbot se evaluó mediante un uso
+caso que estaba dirigido a responder a las necesidades de los usuarios con respecto a
+estrés del examen basado en datos de encuestas de estudiantes universitarios generados
+utilizando Formularios de Google. Los resultados de medir el chatbot
+efectividad en el análisis de respuestas con respecto al estrés del examen
+indicar que el chatbot responde de manera adecuada al usuario
+consultas sobre cómo se sienten con respecto a los exámenes 76,5%. los
+El chatbot también podría adaptarse para su uso en otras áreas de aplicación.
+como centros de información para estudiantes, quioscos gubernamentales y
+sistemas de apoyo a la salud.(Ralston, K., Chen, Y., Isah, H., & Zulkernine, F. (2019)).<br><br>
+<b>Desarrollo y evaluación de un chatbot para
+Museo Regional de Sao Jo ˜ ao del-Rei</b>
+<p align="justify">El uso de nueva información y comunicación
+tecnologías (TIC) ha promovido cambios en la forma en que
+se distribuye la información. Un desafío es explorar la integración de nuevas TIC, como teléfonos inteligentes y chatbots, para
+difundir información dentro de un museo regional. En este papel,
+propusimos el desarrollo de un chatbot al Regional
+Museo de Sao Jo ˜ ao del Rei para presentar su ˜ más destacado
+artefacto, una pintura llamada Retrato de menina. Este documento presenta
+el diseño del chatbot en el que se implementó en IBM Watson
+plataforma. Se realizó una evaluación con los usuarios aplicando el
+Método del Mago de Oz. Los resultados de la evaluación evidenciaron
+que el chatbot propuesto satisface a los usuarios, aunque es necesario
+mejorar el flujo de comunicación para orientar a los usuarios en
+la interacción del chatbot. Los resultados mostraron que implementar
+varios chatbots (es decir, uno para cada artefacto del museo)
+es mejor que hacer uno solo, porque así se evita
+fallas en la determinación de contextos de diálogo y explorar más lúdico
+estilos de interacción, como chatbots que pretenden ser los
+carácter de algún artefacto.(Rezwan, S., Ahmed, W., Mahia, M. A., & Islam, M. R. (2018)).<br><br></p>
 <H3>4. MARCO TEORICO</H3>
  <b>Chatbot</p></b>
 Los chatbots tienen su origen en 1966, cuando Joseph Weizenbaum creó el primer chatbot basado en inteligencia artificial, Eliza, que actuaba como terapeuta.Los más avanzados, son programas capaces de mantener una conversación lógica y pseudo inteligente en un determinado idioma. Algunos de los más complejos están programados en C++, Delphi o similares, y otros más sencillos en Action Script, PHP, VBScript, etc. Pueden ser consultados además de mediante software instalado en un ordenador personal, vía web y vía aplicaciones instaladas en teléfonos inteligentes (entre las mismas, cabe mencionar a Siri y SimSimi,entre otros muchos). Existen muchos otros con amplia presencia en redes de IRC, donde son conocidos como bots de charla o bots de chat.(RoboticaSchool,2020)</p>
@@ -49,9 +103,9 @@ El wifi (escrito también wi fi) es una tecnología que permite la interconexió
 <b>Tawk.to</b></p>
 Es una aplicación de mensajería gratuita que le permite monitorear y conversar con los, visitantes en su sitio web, aplicación móvil o desde una página personalizable gratuita. Copie una línea simple de Javascript en el html de su sitio web y el widget de chat comienza a funcionar al instante.Inicie sesión en el panel para invitar a miembros de su equipo, crear accesos directos y comenzar a chatear con sus visitantes. Controle y rastree su progreso y el de sus equipos a lo largo del tiempo, revise el historial de chat y verifique el rendimiento en análisis.(Quarea, s.f.).</p>
 <H3>11. CONCLUSIONES</H3>
-+ Se logró simular de manera exitosa ya que la misma plataforma nos presta un simulador en el cual se puede interactuar con el chatbot
-+ Se logro identificar los principales elementos para la elaboracion de un chatbot y posteriroemente se logro implementar el cahtbot
-+ Mediante la investigación y la implementación del ejercicio propuesto se llegó a conocer que varias de las herramientas proporcionadas por Watson son para el mejoramiento e implementación de detalles al chatbot
++ Se logró simular de manera exitosa ya que la misma plataforma nos presta un simulador en el cual se puede interactuar con el chatbot</p>
++ Se logro identificar los principales elementos para la elaboracion de un chatbot y posteriroemente se logro implementar el cahtbot</p>
++ Mediante la investigación y la implementación del ejercicio propuesto se llegó a conocer que varias de las herramientas proporcionadas por Watson son para el mejoramiento e implementación de detalles al chatbot</p>
 <H3>12. RECOMENDACIONES</H3>
 Se recomienda crear una cuenta de IBM para poder constar de todos los benedificios de dicha herramienta ademas de que se encesita tener conocimientos aprendidos en la materia de arquitecura de computadoras ya que en base a ellos se puede realizar cualquier tipo de proyecto,
 <H3>13. CRONOGRAMA</H3>
