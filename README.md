@@ -24,7 +24,7 @@ La extensión de la tecnología es ineludible. Cada innovación se crea para ten
 Los chatbots tienen su origen en 1966, cuando Joseph Weizenbaum creó el primer chatbot basado en inteligencia artificial, Eliza, que actuaba como terapeuta.Los más avanzados, son programas capaces de mantener una conversación lógica y pseudo inteligente en un determinado idioma. Algunos de los más complejos están programados en C++, Delphi o similares, y otros más sencillos en Action Script, PHP, VBScript, etc. Pueden ser consultados además de mediante software instalado en un ordenador personal, vía web y vía aplicaciones instaladas en teléfonos inteligentes (entre las mismas, cabe mencionar a Siri y SimSimi,entre otros muchos). Existen muchos otros con amplia presencia en redes de IRC, donde son conocidos como bots de charla o bots de chat.(RoboticaSchool,2020)</p>
 <b>IBM Watson</b></p>
 •	Watson es un sistema informático para búsqueda de respuestas (question answering en inglés), desarrollado por IBM. La corporación lo describe como "una aplicación de tecnologías avanzadas diseñadas para el procesamiento de lenguajes naturales, la recuperación de información, la representación del conocimiento, el razonamiento automático, y el aprendizaje automático al campo abierto de búsquedas de respuestas," que es "construido en la tecnología DeepQA de IBM para la generación de hipótesis, la recopilación de pruebas masivas, el análisis y la calificación.Watson responde a las preguntas gracias a una base de datos almacenada localmente. La información contenida en esa base de datos proviene de multitud de fuentes, incluyendo enciclopedias, diccionarios, tesauros, artículos de noticias, y obras literarias, al igual que bases de datos externos, taxonomías, y ontologías (específicamente DBpedia, WordNet).(Wikipedia,2012-2018)</p>
-<p align="center"><img src="Imagenes/1.jpg"/></p>
+<p align="center"><img src="Imagenes/1.png"/></p>
 <H3>5. DIAGRAMAS</H3>
 
 <H3>6. LISTA DE COMPONENTES</H3>
@@ -34,10 +34,10 @@ Los chatbots tienen su origen en 1966, cuando Joseph Weizenbaum creó el primer 
 - Cuenta en IBM Watson
 - Idea o nesecidad para plantear el chatbot
 - Accseso a un computador
-<p align="center"><img src="Imagenes/5.jpg"/></p>
-
+<p align="center"><img src="Imagenes/111.jpg"/></p>
+<p align="center"><img src="Imagenes/112.png"/></p>
 <H3>7. MAPA DE VARIABLES</H3>
-<p align="center"><img src="Imagenes/6.PNG"/></p>
+<p align="center"><img src="Imagenes/113.jpeg"/></p>
 <H3>8. EXPLICACION DEL CODIGO FUENTE</H3>
 El codigo fuente en si no existe de la simulacion de la tarjeta ESP8266 pero hay un codigo de un ejemplo parecido con señales externas</p>
 <b>Simulador señales infrarojas</b></p>
