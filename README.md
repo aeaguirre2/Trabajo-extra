@@ -29,65 +29,28 @@ Los chatbots tienen su origen en 1966, cuando Joseph Weizenbaum creó el primer 
 
 <H3>6. LISTA DE COMPONENTES</H3>
 <b>IBM Watson</b></p>
-- Accseso a internet
-- Correo electronico
-- Cuenta en IBM Watson
-- Idea o nesecidad para plantear el chatbot
-- Accseso a un computador
+- Accseso a internet</p>
+- Correo electronico</p>
+- Cuenta en IBM Watson</p>
+- Idea o nesecidad para plantear el chatbot</p>
+- Accseso a un computador</p>
 <p align="center"><img src="Imagenes/111.jpg"/></p>
 <p align="center"><img src="Imagenes/112.png"/></p>
 <H3>7. MAPA DE VARIABLES</H3>
 <p align="center"><img src="Imagenes/113.jpeg"/></p>
 <H3>8. EXPLICACION DEL CODIGO FUENTE</H3>
-El codigo fuente en si no existe de la simulacion de la tarjeta ESP8266 pero hay un codigo de un ejemplo parecido con señales externas</p>
-<b>Simulador señales infrarojas</b></p>
-int sensor = 0;</p>
-void setup()</p>
-{</p>
-  pinMode(9, INPUT);</p>
-  Serial.begin(9600);</p>
-  pinMode(7, OUTPUT);</p>
-}</p>
-void loop()</p>
-{</p>
-  sensor = digitalRead(9);</p>
-  Serial.println(sensor);</p>
-  if (sensor == 0) {</p>
-    digitalWrite(7, HIGH);</p>
-    delay(1000); //Para poder ver el cambio</p>
-  }</p>
-  if (sensor == 1) {</p>
-    digitalWrite(7, LOW);</p>
-  }</p>
-  delay(10);</p>
-}</p>
-Se inicializa la variable entera sensor con 0, colocamas una variable de tipo void(vacio) en setup, Se le ingresa el valor de 9 al pin y por ende sale el valor 7, se le coloca el print que es para mostrar en la pantalla lo que pasa con el sensor al momento de realizar la entrada de datos, se le coloca un condicional if para el canso en que vale 0 la intensidad de luz del led se aumenta por arriba de 7 con un overlay de 1000, y para cuando es 1 la intensidad se baja de 7 con un overlay de 10, esto nos permite demostrar que dependiendo de las señales externas que recibamos en nuestro circuito a travez de un sensor, en este caso sensor infrarojo, ocurre una intensidad de iluminacion diferente en el led</p>
+No tiene codigo fuente
 <H3>9. DESCRIPCION DE PRERREQUISITOS Y CONFIGURACION</H3>
-Se debe tener una cuenta en la plataforma de Tinkercad para poder utilizar sus servicios.</p>
-En el caso de que hubiera funcionado la simulacion de ESP8266 se necesitaria una cuenta en ThingSpeak como es el caso contrario no se necesita nada adicional para la simulacion de infrarojo</p>
+Se necesita una cuenta de IBM Watson la cual nos proporcionara las herramientas para la creacion de un chatbot,ademas de proporcionar las herramientas no mustra una guia basica para la creacion del chatbot</p>
 <H3>10. APORTACIONES</H3>
-<b>SBC</b></p>
-El SBC (Session Border Controller) es un nuevo componente al alcance de las empresas. Se puede instalar como un appliance o máquina virtual y dispone de funcionalidades que harán que su red de telefonía IP sea mucho más segura y se integre mejor con el equipamiento SIP de diferentes fabricantes y proveedores de servicios.
-Básicamente, el SBC gestiona tanto la media como la señalización de las llamadas VoIP.
-Las funciones principales de un SBC son las siguientes:
-•    SEGURIDAD: Uno de los roles principales de estos equipos es proteger, mediante una de capa de seguridad adicional,  los puntos de entrada al sistema de voz ip desde las redes no seguras, evitando el hacking y los fraudes telefónicos. El SBC oculta al exterior la topología de red interna, actuando como un firewall pero con características más adecuadas para el tráfico multimedia.
-•    ENCRIPTACIÓN: El uso cada vez más intensivo de las redes públicas para transportar VoIP hace que se incrementen los riesgos de que las comunicaciones puedan ser interceptadas de forma ilícita. Estas amenazas se pueden evitar utilizando los protocolos TLS (Transport Layer Security) y SRTP (Secure Real-Time Transport Protocol) para proteger la señalización y los canales de voz respectivamente. 
-•    POLÍTICAS DE ACCESO: El uso no autorizado de los servicios VoIP pueden ser controlados aplicando y gestionando políticas mediante el SBC.
-•    ENRUTAMIENTO DE LLAMADAS: El SBC permite configurar reglas de enrutamiento de llamadas que permitirán funcionalidades como el LCR (least cost routing) o el balanceo de carga entre diferentes SIP Trunk.
-•    INTEROPERABILIDAD: Aunque SIP se considera un estándar, es extremadamente flexible y la realidad es que dos equipos basados en SIP no necesariamente se comunicaran de forma correcta.
-•    MEDIA TRANSCODING: El transcoding es necesario para permitir que diferentes tipos de media crucen a través de equipos diversos y también para permitir un uso óptimo del ancho de banda disponible. Aunque el transcoding se puede hacer enteramente por software requiere un uso intensivo de la CPU y por tanto en sistemas de cierta capacidad es recomendable utilizar transcoding hardware.
-•    DETECCIÓN/GENERACIÓN DE DTMF: La señalización DTMF (Dual Tone Multi Frequency) en redes de telefonía IP no siempre es sencilla, ya que algunos codecs no transmiten de forma fiable los tonos debido al uso de algoritmos de compresión con pérdida de ancho de banda que están optimizados para voz. El SBC dispone de la capacidad de implantar correctamente el método estándar RFC2833 para manejar este tipo de señalización(Quarea, s.f.).</p>
-<b>Microprosesador</b></p>
-Se denomina microprocesador al circuito electrónico que procesa la energía necesaria para que el dispositivo electrónico en que se encuentra funcione, ejecutando los comandos y los programas adecuadamente. La Unidad Central de Procesos (CPU) de una computadora es un ejemplo de un microprocesador.Este componente electrónico forma parte de la tarjeta madre de una computadora y se caracteriza por ser un circuito integrado con miles y, a veces, hasta con millones de transistores.Se denomina micro por su significado inglés que indica “pequeño”, en relación a la importancia de su función en un dispositivo, comparado a veces con el cerebro y con el corazón de los seres humanos.Este componente electrónico es el encargado de procesar y ejecutar las instrucciones codificadas en números binarios.El microprocesador es comúnmente conocido como la Unidad Central de Procesos (CPU) de los diferentes dispositivos electrónicos, pero también contienen procesadores otros dispositivos como los discos duros.Es tan importante la función del microprocesador que actualmente es considerado el componente electrónico más influyente en la vida del ser humano.A nivel económico, es el producto más comercializado a nivel mundial y, a nivel social, es el objeto más utilizado, presente en una gran variedad de artefactos y componentes electrónicos, así como, computadores, teléfonos celulares, teléfonos inteligentes y tabletas(Microprocesador, 2020).</p>
 <b>Wifi</b></p>
 El wifi (escrito también wi fi) es una tecnología que permite la interconexión inalámbrica de dispositivos electrónicos. Los dispositivos habilitados con wifi (tales como ordenadores personales, teléfonos, televisores, videoconsolas, reproductores de música, etcétera) pueden conectarse entre sí o a Internet a través de un punto de acceso de red inalámbrica. Wi-Fi es una marca de la Alianza Wi-Fi, la organización comercial que cumple con los estándares 802.11 relacionados con redes inalámbricas de área local. Su primera denominación en inglés fue Wireless Ethernet Compatibility Alliance (Hernandez, 2018).</p>
-<b>Microcomputadoras</b></p>
- Una microcomputadora, un microcomputador o un microordenador es una computadora pequeña, con un microprocesador como su unidad central de procesamiento CPU. Generalmente, el microprocesador incluye los circuitos de almacenamiento (o memoria caché) y entrada/salida en el mismo circuito integrado (o chip). Las microcomputadoras se hicieron populares desde 1970 y 1980 con el surgimiento de microprocesadores más potentes. Los predecesores de estas computadoras, las supercomputadoras y las minicomputadoras, eran mucho más grandes y costosas (aunque las supercomputadoras modernas, como las IBM System z, utilizan uno o más microprocesadores como CPUs). Muchas microcomputadoras (cuando están equipadas con un teclado y una pantalla para entrada y salida) son también computadoras personales (en sentido general). La abreviatura micro fue comúnmente utilizada durante las décadas de 1970 y de 1980,aunque actualmente esté en desuso(Wikipedia, 2006-2017).</p>
+<b>Tawk.to</b></p>
+Es una aplicación de mensajería gratuita que le permite monitorear y conversar con los, visitantes en su sitio web, aplicación móvil o desde una página personalizable gratuita. Copie una línea simple de Javascript en el html de su sitio web y el widget de chat comienza a funcionar al instante.Inicie sesión en el panel para invitar a miembros de su equipo, crear accesos directos y comenzar a chatear con sus visitantes. Controle y rastree su progreso y el de sus equipos a lo largo del tiempo, revise el historial de chat y verifique el rendimiento en análisis.(Quarea, s.f.).</p>
 <H3>11. CONCLUSIONES</H3>
-- Se pudo identificar la ventaja de tener aplicaciones para programación sin descargar nada</p>
--Se pudo aprender a realizar una programación orientada a objetos con una plataforma que usaba similar lenguaje al de scratch.</p>
--El simulador nos permite exportar codigos y crearlos de fomra facil lo que nos permite reutilizarlo y anclarlo .</p>
--No se pudo realizar la simulacion debido a un error en la plataforma tinkercad , ya que las señales que venian de una pagina web externa a nuestro circuito tenian errores y por lo tanto la plataforma decidio quitar la tarjeta ESP8266 de su editor de codigos y circuitos</p>
++ Se logró simular de manera exitosa ya que la misma plataforma nos presta un simulador en el cual se puede interactuar con el chatbot
++ Se logro identificar los principales elementos para la elaboracion de un chatbot y posteriroemente se logro implementar el cahtbot
++ Mediante la investigación y la implementación del ejercicio propuesto se llegó a conocer que varias de las herramientas proporcionadas por Watson son para el mejoramiento e implementación de detalles al chatbot
 <H3>12. RECOMENDACIONES</H3>
 <p>-Se recomienda crear una cuenta en cada para poder tener nuestros archivos guardados</p>
 <p>-Si recomienda tener un poco de cuidado al realizar esta simulacion con onjetos fisicos ya que estos se podrian quemar</p>
