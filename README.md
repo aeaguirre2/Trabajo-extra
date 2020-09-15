@@ -80,7 +80,8 @@ Los chatbots tienen su origen en 1966, cuando Joseph Weizenbaum creó el primer 
 •	Watson es un sistema informático para búsqueda de respuestas (question answering en inglés), desarrollado por IBM. La corporación lo describe como "una aplicación de tecnologías avanzadas diseñadas para el procesamiento de lenguajes naturales, la recuperación de información, la representación del conocimiento, el razonamiento automático, y el aprendizaje automático al campo abierto de búsquedas de respuestas," que es "construido en la tecnología DeepQA de IBM para la generación de hipótesis, la recopilación de pruebas masivas, el análisis y la calificación.Watson responde a las preguntas gracias a una base de datos almacenada localmente. La información contenida en esa base de datos proviene de multitud de fuentes, incluyendo enciclopedias, diccionarios, tesauros, artículos de noticias, y obras literarias, al igual que bases de datos externos, taxonomías, y ontologías (específicamente DBpedia, WordNet).(Wikipedia,2012-2018)</p>
 <p align="center"><img src="Imagenes/1.png"/></p>
 <H3>5. DIAGRAMAS</H3>
-
+<p align="center"><img src="Imagenes/bbbb.jpeg"/></p>
+<p align="center"><img src="Imagenes/aaaa.jpg"/></p>
 <H3>6. LISTA DE COMPONENTES</H3>
 <b>IBM Watson</b></p>
 - Accseso a internet</p>
