@@ -7,7 +7,7 @@
 <b>Objetivos Generales</b>
 <p align="justify">- Realizar un video en el cual se pueda ejemplificar el uso de un chatboy con IBM.</p>
 <b>Objetivos Específicos</b>
-<p align="justify">- REmplear las herramientas que nos brinda IBM Watson.</p>
+<p align="justify">- Emplear las herramientas que nos brinda IBM Watson.</p>
 <p align="justify">- Implementar un ejemplo funcional sobre un chatbot.</p>
 <H3>3. ESTADO DEL ARTE</H3>
 <b>Implementación de Chatbot para ITSM
