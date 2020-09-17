@@ -117,7 +117,7 @@ ayudan a gestionar el flujo de trabajo de un proyecto de desarrollo de conocimie
 Content Catalog</p>
 ofrecen un método sencillo para añadir intenciones comunes al conocimiento de diálogo de Watson Assistant.Las intenciones que añade desde el catálogo están pensadas para proporcionar un punto de partida. Añada o edite intenciones de catálogo para adaptarlas a su caso de uso.</p>
 <H3>5. DIAGRAMAS</H3>
-<p align="center"><img src="Imagenes/bbbb.jpeg"/></p>
+<p align="center"><img src="Imagenes/IBM Watson Assistant - Google Chrome 17_09_2020 11_11_58 (2).png"/></p>
 <p align="center"><img src="Imagenes/aaaa.jpg"/></p>
 <H3>6. LISTA DE COMPONENTES</H3>
 <b>IBM Watson</b></p>
