@@ -28,7 +28,7 @@ conversación y realizar tareas como la creación de un ticket en
 nombre del usuario.(Godse, N. A., Deodhar, S., Raut, S., & Jagdale, P. (2018)).<br><br>
  <b>Soporte para estudiantes multilingüe interactivo de voz
 Sistema que utiliza IBM Watson</b><br>
-Los sistemas impulsados ​​por inteligencia artificial son
+Los sistemas impulsados por inteligencia artificial son
 siendo desarrollado para ser más fácil de usar al comunicar
 con los usuarios en una forma de conversación progresivamente "humana".
 Chatbots, también conocidos como sistemas de diálogo, interactivos
@@ -79,6 +79,43 @@ Los chatbots tienen su origen en 1966, cuando Joseph Weizenbaum creó el primer 
 <b>IBM Watson</b></p>
 •	Watson es un sistema informático para búsqueda de respuestas (question answering en inglés), desarrollado por IBM. La corporación lo describe como "una aplicación de tecnologías avanzadas diseñadas para el procesamiento de lenguajes naturales, la recuperación de información, la representación del conocimiento, el razonamiento automático, y el aprendizaje automático al campo abierto de búsquedas de respuestas," que es "construido en la tecnología DeepQA de IBM para la generación de hipótesis, la recopilación de pruebas masivas, el análisis y la calificación.Watson responde a las preguntas gracias a una base de datos almacenada localmente. La información contenida en esa base de datos proviene de multitud de fuentes, incluyendo enciclopedias, diccionarios, tesauros, artículos de noticias, y obras literarias, al igual que bases de datos externos, taxonomías, y ontologías (específicamente DBpedia, WordNet).(Wikipedia,2012-2018)</p>
 <p align="center"><img src="Imagenes/1.png"/></p>
+Intents</p>
+Son propósitos u objetivos que se expresan en la entrada de un cliente, tales como responder a una pregunta o procesar un pago de factura. Al reconocer la intención expresada en una entrada de cliente, el servicio Watson Assistant puede elegir el flujo de diálogo correcto para responder a la misma.</p>
+
+-Para definir un intento se debe nombrarlo antecedido de un simbolo numeral.</p>
+
+-Hay que añadir una descripcion de intento en esta se puede colocar palabras clave sobre lo que se quiere que haga el chatbot.</p>
+
+-Se define ejemplos de preguntas que el chat bot puede aceptarlas como el indicador de inicio de dialogo.</p>
+
+Entities</p>
+Se utilizan para identificar partes interesantes del enunciado del usuario, como nombres y fechas. Watson Assistant ya proporciona entidades del sistema (para fecha, hora, nombres, etc.) y le permite definir entidades con sinónimos y coincidencia aproximada, así como definir entidades basadas en patrones</p>
+
+-Para definir una entiti es nesesario hacerlo con el caracter especial del arroba.</p>
+
+-Hay que añadir un valor y varios de los sinonimos que nos expresen las caracteristicas propias del objeto definido.</p>
+-Al definir los objetos se almacena en una base de datos la cual nos proporcionara los objetos expuestos para posteriormente dar respuestas a las preguntas planteadas por los usuarios.</p>
+
+Dialog</p>
+Define lo que dice su asistente en respuesta a los clientes</p>
+
+-Para la utilizacion de este submenu se hace uso de odos los cuales son configurables con diferentes aspectos.</p>
+
+-para la configuaracion de los saludos se debe abrir la configuaracion del nodo saludo en el cual se puede aumentar diferebtes tipos de saludos haciendo una seleccion aleatoria de los mismos para evitar caer en la monotonia de la charla.</p>
+
+-Se añade nodos como puede ser el de charla para configurar las diferentes respuestas ademas de poder ingresar diferentes enlaces a paginas en las cales puede dar respuesta al problema planteado.</p>
+
+Options</p>
+El texto que agrega como etiqueta se muestra en la respuesta al usuario como una opción seleccionable.</p>
+
+Analytics</p>
+es un servicio inteligente de análisis y descubrimiento de datos disponible en la nube. Ayuda a descubrir patrones y significado en datos. Utiliza un lenguaje natural y puede descifrar casi cualquier idioma.</p>
+
+Versions</p>
+ayudan a gestionar el flujo de trabajo de un proyecto de desarrollo de conocimientos de diálogo.Cree una versión de conocimiento para capturar una instantánea de los datos de entrenamiento (intenciones y entidades) y un diálogo en el conocimiento en puntos clave durante el proceso de desarrollo.</p>
+
+Content Catalog</p>
+ofrecen un método sencillo para añadir intenciones comunes al conocimiento de diálogo de Watson Assistant.Las intenciones que añade desde el catálogo están pensadas para proporcionar un punto de partida. Añada o edite intenciones de catálogo para adaptarlas a su caso de uso.</p>
 <H3>5. DIAGRAMAS</H3>
 <p align="center"><img src="Imagenes/bbbb.jpeg"/></p>
 <p align="center"><img src="Imagenes/aaaa.jpg"/></p>
